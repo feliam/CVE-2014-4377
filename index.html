@@ -1,0 +1,21 @@
+<html>
+<script>
+function f(event){
+    alert(event);
+    //document.getElementById("pdfcrash").src
+    //alert("NOOO!"+CtrlAddress.toString(16)+"&0x"+DyldSharedCacheBase.toString(16)+"&"+Version+"&"+Math.random();
+    for (i=0; i<100000; i+=1);
+
+}
+</script>
+<body>
+    <form type="get" action="cgi-bin/crash.pdf">
+        Shellcode address: <input type="text" name="shellcode" />  (ex. 0x41414141) </br>
+        dyld_shared_cache base: <input type="text" name="baseaddr" /> (ex. 0x42424242) </br>
+        Version: <input type="text" name="version" /> (ex. "iPhone5,1-7.1) </br>
+
+        <input type="submit" onclick="f" />
+    </form>
+</body>
+</html>
+

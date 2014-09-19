@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Content-type: application/pdf
+echo ""
+python mkCrash.py $QUERY_STRING
+
